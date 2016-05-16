@@ -197,7 +197,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 432626, guid: b1417cd85768fe0478c7477913bd5781, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1417cd85768fe0478c7477913bd5781, type: 2}
@@ -248,6 +248,10 @@ Prefab:
     - target: {fileID: 11460858, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: bulletSpeed
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_StepInterval
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
