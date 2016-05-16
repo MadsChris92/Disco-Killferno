@@ -21,12 +21,8 @@ public class Bullet : MonoBehaviour {
             lights[i].color = lightColors[activeLight];
         }
 
-<<<<<<< HEAD
         gameObject.GetComponent<TrailRenderer>().material.color = lightColors[activeLight];
 
-
-=======
->>>>>>> origin/master
     }
 	
 	// Update is called once per frame
