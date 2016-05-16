@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour {
         lightColors[5] = Color.magenta;
         int activeLight = Random.Range(0, lightColors.Length);
 
-        for(int i = 0; 0 < lights.Length; i++)
+        for(int i = 0; i < lights.Length; i++)
         {
             lights[i].color = lightColors[activeLight];
         }
