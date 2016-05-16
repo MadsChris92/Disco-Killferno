@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 0.67
   m_AmbientMode: 3
   m_SkyboxMaterial: {fileID: 2100000, guid: 41b2f6494463e424886f4bf17fc7d518, type: 2}
   m_HaloStrength: 0.5
@@ -211,6 +211,10 @@ Prefab:
       propertyPath: m_StepInterval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11460858, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 129156, guid: b1417cd85768fe0478c7477913bd5781, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
