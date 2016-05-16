@@ -205,7 +205,7 @@ TrailRenderer:
   m_GameObject: {fileID: 129156}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: e9560ca24266a954e9ad82588fa88358, type: 2}
   m_SubsetIndices: 
@@ -225,7 +225,7 @@ TrailRenderer:
   m_SortingOrder: 0
   m_Time: 1
   m_StartWidth: 0.1
-  m_EndWidth: 0.1
+  m_EndWidth: 0
   m_Colors:
     m_Color[0]:
       serializedVersion: 2
@@ -388,8 +388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights:
-  - {fileID: 10894394}
-  - {fileID: 10887874}
   - {fileID: 10846128}
   - {fileID: 10828258}
 --- !u!135 &13594254
