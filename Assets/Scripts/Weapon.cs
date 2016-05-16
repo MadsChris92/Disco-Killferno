@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             GameObject bulletClone = Instantiate(bullet, bulletSpawn.transform.position, Quaternion.identity) as GameObject;
-            bulletClone.GetComponent<Rigidbody>().AddForce(transform.forward, ForceMode.Force);
+            bulletClone.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
         }
     }
 }
