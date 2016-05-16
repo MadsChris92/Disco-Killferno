@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour {
             lights[i].color = lightColors[activeLight];
         }
 
-        gameObject.GetComponent<TrailRenderer>().material.color = lightColors[activeLight];
+        gameObject.GetComponent<TrailRenderer>().material.color = lightColors[activeLight]; 
 
     }
 	
