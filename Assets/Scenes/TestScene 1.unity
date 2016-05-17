@@ -405,6 +405,22 @@ Prefab:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 1705006279}
+    - target: {fileID: 190774, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Name
+      value: Body
+      objectReference: {fileID: 0}
+    - target: {fileID: 10842304, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_DrawHalo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10842304, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Range
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 10842304, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Intensity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
   m_IsPrefabParent: 0
