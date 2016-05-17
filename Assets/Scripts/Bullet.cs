@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour {
 
     public Light[] lights = new Light[2]; 
     Color[] lightColors = new Color[6];
+    public Color activeColor;
 
 
 	void Start () {
@@ -21,6 +22,7 @@ public class Bullet : MonoBehaviour {
             lights[i].color = lightColors[activeLight];
         }
 
+        activeColor = lightColors[activeLight];
         gameObject.GetComponent<TrailRenderer>().material.color = lightColors[activeLight];
         MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
         Material material = new Material(meshRenderer.material);

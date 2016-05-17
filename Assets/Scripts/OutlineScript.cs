@@ -9,7 +9,11 @@ public class OutlineScript : MonoBehaviour
 
     public GameObject[] lights = new GameObject[12];
 
-    float timer = 0;
+    Color reactingLightsColor = Color.red;
+
+    float timer = 0, dynamicBlinkInterval = 3;
+
+    
 
     public enum lightModes
     {
@@ -26,7 +30,7 @@ public class OutlineScript : MonoBehaviour
         lightColors[4] = Color.yellow;
         lightColors[5] = Color.magenta;
 
-        if (myLightMode == lightModes.partyLights)
+        if (myLightMode == lightModes.dynamicLights)
         {
             int activeLight = Random.Range(0, lightColors.Length);
             for (int i = 0; i < lights.Length; i++)
@@ -40,17 +44,23 @@ public class OutlineScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(myLightMode == lightModes.partyLights)
+        if(myLightMode == lightModes.reactingLights)
         {
-            partyLights();
+            reactingLights();
         }
+
+        if(myLightMode == lightModes.dynamicLights)
+        {
+            dynamicLight();
+        }
+
+
     }
 
-    void partyLights()
+    void dynamicLight()
     {
         timer += Time.deltaTime;
-        Debug.Log(timer);
-        if(timer > 5)
+        if(timer > dynamicBlinkInterval)
         {
             int activeLight = Random.Range(0, lightColors.Length);
             for (int i = 0; i < lights.Length; i++)
@@ -58,7 +68,16 @@ public class OutlineScript : MonoBehaviour
                 lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", lightColors[activeLight]);   
             }
             timer = 0;
+        }  
+    }
+
+    void reactingLights()
+    {
+        reactingLightsColor = gameObject.GetComponent<Objects>().hitColor;
+
+        for (int i = 0; i < lights.Length; i++)
+        {
+            lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", reactingLightsColor);
         }
-        
     }
 }
