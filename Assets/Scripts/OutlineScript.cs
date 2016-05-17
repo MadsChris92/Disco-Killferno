@@ -8,6 +8,7 @@ public class OutlineScript : MonoBehaviour
     Color[] lightColors = new Color[6];
 
     public GameObject[] lights = new GameObject[12];
+    public AudioClip hitSound;
 
     Color reactingLightsColor = Color.red;
 
@@ -20,7 +21,7 @@ public class OutlineScript : MonoBehaviour
 
     public enum lightModes
     {
-        staticLights, dynamicLights, reactingLights, partyLights
+        staticLights, dynamicLights, reactingLights, partyLights, reactingWithSound
     }
     public lightModes myLightMode;
 
@@ -65,6 +66,11 @@ public class OutlineScript : MonoBehaviour
             dynamicLight();
         }
 
+        if(myLightMode == lightModes.reactingWithSound)
+        {
+            reactWithSound();
+        }
+
         //bla
     }
 
@@ -89,6 +95,25 @@ public class OutlineScript : MonoBehaviour
         for (int i = 0; i < lights.Length; i++)
         {
             lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", reactingLightsColor);
+        }
+    }
+
+    void reactWithSound()
+    {
+        reactingLightsColor = gameObject.GetComponent<Objects>().hitColor;
+
+        for (int i = 0; i < lights.Length; i++)
+        {
+            lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", reactingLightsColor);
+        }
+    }
+
+    void OnCollsionEnter(Collision c)
+    {
+        if(c.gameObject.tag == "Projectile" && myLightMode == lightModes.reactingWithSound)
+        {
+            Debug.Log("test");
+            gameObject.GetComponent<AudioSource>().Play();
         }
     }
 }
