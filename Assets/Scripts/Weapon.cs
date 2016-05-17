@@ -22,6 +22,7 @@ public class Weapon : MonoBehaviour {
             bulletClone.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
             Destroy(bulletClone, 5);
             animator.SetTrigger("reload");
+            gameObject.GetComponent<AudioSource>().Play();
         }
     }
 }
