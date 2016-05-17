@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour {
 
     public GameObject bullet;
     public float bulletSpeed = 100;
+    public Animator animator;
     public Transform bulletSpawn;
     // Use this for initialization
     void Start() {
@@ -20,6 +21,7 @@ public class Weapon : MonoBehaviour {
             bulletClone.transform.up = transform.forward;
             bulletClone.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
             Destroy(bulletClone, 5);
+            animator.SetTrigger("reload");
         }
     }
 }
