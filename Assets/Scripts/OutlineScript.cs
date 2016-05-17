@@ -41,14 +41,16 @@ public class OutlineScript : MonoBehaviour
     void partyLights()
     {
         timer += Time.deltaTime;
+        Debug.Log(timer);
         if(timer > 5)
         {
             int activeLight = Random.Range(0, lightColors.Length);
             for (int i = 0; i < lights.Length; i++)
             {
-                lights[i].GetComponent<Renderer>().material.SetColor("_Emission", lightColors[activeLight]);   
+                lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", lightColors[activeLight]);   
             }
             timer = 0;
         }
+        
     }
 }
