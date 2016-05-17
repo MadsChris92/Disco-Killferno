@@ -6,10 +6,20 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Belt
+    100004: Cun
     400000: //RootNode
+    400002: Belt
+    400004: Cun
     2300000: //RootNode
+    2300002: Belt
+    2300004: Cun
     3300000: //RootNode
+    3300002: Belt
+    3300004: Cun
     4300000: Cube
+    4300002: Belt
+    4300004: Cun
   materials:
     importMaterials: 1
     materialName: 0
