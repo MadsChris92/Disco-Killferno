@@ -14,6 +14,7 @@ GameObject:
   - 33: {fileID: 3313100}
   - 23: {fileID: 2334194}
   - 136: {fileID: 13698526}
+  - 135: {fileID: 13520538}
   m_Layer: 0
   m_Name: Bullet3
   m_TagString: Untagged
@@ -44,7 +45,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.923, y: 4.596, z: 1.299943}
+  m_LocalPosition: {x: -11.985, y: 4.416934, z: 0.519083}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 417074}
@@ -70,12 +71,12 @@ MeshRenderer:
   m_GameObject: {fileID: 107060}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_Materials:
   - {fileID: 2100000, guid: 87ad3748589b591489dde230b86499df, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_UseLightProbes: 0
   m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -107,7 +108,7 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!96 &9615392
@@ -137,7 +138,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Time: 0.5
-  m_StartWidth: 0.2
+  m_StartWidth: 0.3
   m_EndWidth: 0
   m_Colors:
     m_Color[0]:
@@ -203,6 +204,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lights:
   - {fileID: 10843228}
+--- !u!135 &13520538
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107060}
+  m_Material: {fileID: 13400000, guid: 9f93f63d068b08c459038c40fce897d8, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12
+  m_Center: {x: 0, y: 0.14, z: 0}
 --- !u!136 &13698526
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -211,7 +224,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 107060}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.05
   m_Height: 0.2
   m_Direction: 1
