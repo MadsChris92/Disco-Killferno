@@ -64,7 +64,7 @@ public class OutlineScript : MonoBehaviour
             dynamicLight();
         }
 
-
+        //bla
     }
 
     void dynamicLight()
