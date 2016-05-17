@@ -22,6 +22,10 @@ public class Bullet : MonoBehaviour {
         }
 
         gameObject.GetComponent<TrailRenderer>().material.color = lightColors[activeLight];
+        MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
+        Material material = new Material(meshRenderer.material);
+        material.color = lightColors[activeLight];
+        meshRenderer.material = material;
 
     }
 	
