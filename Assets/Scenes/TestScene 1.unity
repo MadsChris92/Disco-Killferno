@@ -369,6 +369,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11126136, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Animations.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 453536, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 10.438839
@@ -421,6 +425,18 @@ Prefab:
       propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11126136, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 4036321a75fc10a4d91293bcb41076f4, type: 2}
+    - target: {fileID: 11126136, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Animations.Array.data[2]
+      value: 
+      objectReference: {fileID: 7400000, guid: bf9cd614b4954584ea0fe5d470a2612b, type: 2}
+    - target: {fileID: 11126136, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 0779f5168d2dfac4081a3c914b5612c5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
   m_IsPrefabParent: 0
