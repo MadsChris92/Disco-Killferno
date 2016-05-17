@@ -13,7 +13,8 @@ public class OutlineScript : MonoBehaviour
 
     public Color staticColor;
 
-    float timer = 0, dynamicBlinkInterval = 3;
+    float timer = 0;
+    public float dynamicBlinkInterval = 3;
 
     
 
