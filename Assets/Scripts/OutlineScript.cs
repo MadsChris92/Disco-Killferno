@@ -26,6 +26,14 @@ public class OutlineScript : MonoBehaviour
         lightColors[4] = Color.yellow;
         lightColors[5] = Color.magenta;
 
+        if (myLightMode == lightModes.partyLights)
+        {
+            int activeLight = Random.Range(0, lightColors.Length);
+            for (int i = 0; i < lights.Length; i++)
+            {
+                lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", lightColors[activeLight]);
+            }
+        }
         
     }
 
