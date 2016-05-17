@@ -108,9 +108,9 @@ public class OutlineScript : MonoBehaviour
         }
     }
 
-    void OnCollsionEnter(Collision c)
+    void OnCollisionEnter(Collision c)
     {
-        if(c.gameObject.tag == "Projectile" && myLightMode == lightModes.reactingWithSound)
+        if(c.gameObject.tag == "Projectile")
         {
             Debug.Log("test");
             gameObject.GetComponent<AudioSource>().Play();
