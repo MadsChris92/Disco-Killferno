@@ -21,7 +21,9 @@ public class Weapon : MonoBehaviour {
             bulletClone.transform.up = transform.forward;
             bulletClone.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
             Destroy(bulletClone, 5);
+
             animator.SetTrigger("fire");
+            gameObject.GetComponent<AudioSource>().Play();
         }
     }
 }
