@@ -388,6 +388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights:
+  - {fileID: 10894394}
+  - {fileID: 10887874}
   - {fileID: 10846128}
   - {fileID: 10828258}
 --- !u!135 &13594254
