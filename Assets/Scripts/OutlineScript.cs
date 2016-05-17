@@ -11,6 +11,8 @@ public class OutlineScript : MonoBehaviour
 
     Color reactingLightsColor = Color.red;
 
+    public Color staticColor;
+
     float timer = 0, dynamicBlinkInterval = 3;
 
     
@@ -29,6 +31,14 @@ public class OutlineScript : MonoBehaviour
         lightColors[3] = Color.green;
         lightColors[4] = Color.yellow;
         lightColors[5] = Color.magenta;
+
+        if(myLightMode == lightModes.staticLights)
+        {
+            for (int i = 0; i < lights.Length; i++)
+            {
+                lights[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", staticColor);
+            }
+        }
 
         if (myLightMode == lightModes.dynamicLights)
         {
