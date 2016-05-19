@@ -1,25 +1,17 @@
 fileFormatVersion: 2
-guid: 44b50ed1d04aa4b4ba1f994e1e378e97
-timeCreated: 1463508308
+guid: c9fb68d5b95d7fe42a7e03bdabe97955
+timeCreated: 1463696143
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Belt
-    100004: Cun
     400000: //RootNode
-    400002: Belt
-    400004: Cun
     2300000: //RootNode
-    2300002: Belt
-    2300004: Cun
     3300000: //RootNode
-    3300002: Belt
-    3300004: Cun
-    4300000: Cube
-    4300002: Belt
-    4300004: Cun
+    4300000: Bullet
+    7400000: Default Take
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -44,7 +36,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.04
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -61,7 +53,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
@@ -78,7 +70,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
