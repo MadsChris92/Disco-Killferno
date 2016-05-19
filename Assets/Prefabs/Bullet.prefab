@@ -392,13 +392,14 @@ MonoBehaviour:
   - {fileID: 10887874}
   - {fileID: 10846128}
   - {fileID: 10828258}
+  activeColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!135 &13594254
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129156}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 38c7bef133893234695e6bb9fb65b523, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
