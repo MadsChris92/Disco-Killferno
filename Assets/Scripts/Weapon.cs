@@ -28,5 +28,9 @@ public class Weapon : MonoBehaviour {
 
             current = 1-current;
         }
+
+        if(Input.GetButtonDown("Reload")) {
+            animator[current].SetTrigger("reload");
+        }
     }
 }
