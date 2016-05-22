@@ -994,7 +994,7 @@ RectTransform:
   m_Children:
   - {fileID: 301779172}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1820,6 +1820,14 @@ Prefab:
       propertyPath: text
       value: 
       objectReference: {fileID: 301779173}
+    - target: {fileID: 458210, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441346, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
   m_IsPrefabParent: 0
@@ -2492,7 +2500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &1558337245
 GameObject:
   m_ObjectHideFlags: 0
