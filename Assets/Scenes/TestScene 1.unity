@@ -1828,6 +1828,10 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11496188, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
+      propertyPath: recoilWidth
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
   m_IsPrefabParent: 0
