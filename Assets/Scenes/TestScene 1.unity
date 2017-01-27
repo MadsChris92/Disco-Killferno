@@ -1820,6 +1820,7 @@ Prefab:
       propertyPath: text
       value: 
       objectReference: {fileID: 301779173}
+<<<<<<< HEAD
     - target: {fileID: 458210, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
       propertyPath: m_RootOrder
       value: 0
@@ -1832,6 +1833,8 @@ Prefab:
       propertyPath: recoilWidth
       value: 50
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/master
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
   m_IsPrefabParent: 0
