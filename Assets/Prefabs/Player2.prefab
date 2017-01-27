@@ -3501,7 +3501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1468160611165420
 GameObject:
   m_ObjectHideFlags: 1
@@ -3691,14 +3691,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1421813767716516}
-  m_LocalRotation: {x: -0.00819267, y: 0.04998119, z: 0.00041000565, w: 0.9987165}
-  m_LocalPosition: {x: -0.99, y: 0, z: 0.8}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22, y: 0, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4563965889111436}
   m_Father: {fileID: 4093404060658362}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.94, y: 5.73, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4563965889111436
 Transform:
   m_ObjectHideFlags: 1
@@ -4047,7 +4047,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ec34be4efa7da8f4cb1fe0c476625db0, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4175,20 +4175,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   bullet: {fileID: 107060, guid: 1fdb8c901f91c6d46bbb42f0bebf3638, type: 2}
-  bulletSpeed: 1000
+  bulletSpeed: 10000
   animator: {fileID: 95244212161927242}
   bulletSpawn: {fileID: 4928107775315090}
   gunTransform: {fileID: 4538517802329792}
   magCap: 5
-  bagCap: 27
+  bagCap: 15
   recoil: 1
   recoilWidth: 1
   recoilHeight: 1
-  audioSource: {fileID: 0}
-  reloadSound: {fileID: 0}
-  loadSound: {fileID: 0}
-  fireSound: {fileID: 0}
-  emptySound: {fileID: 0}
+  audioSource: {fileID: 82372331652808632}
+  reloadSound: {fileID: 8300000, guid: 9a52c3406c16e904aa543332c8d93ff1, type: 3}
+  loadSound: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  fireSound: {fileID: 8300000, guid: cae2323ff7524f74da44a5a13ce66352, type: 3}
+  emptySound: {fileID: 8300000, guid: ec34be4efa7da8f4cb1fe0c476625db0, type: 3}
   rounds:
   - {fileID: 1210574116590638}
   - {fileID: 1784861027679902}

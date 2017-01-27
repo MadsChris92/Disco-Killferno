@@ -116,8 +116,8 @@ public class Weapon : MonoBehaviour {
     protected void Load() {
         if (magAmmo > 0 && !loaded) {
             magAmmo--;
+            loaded = true;
         }
         text.text = magAmmo + "/" + magCap + "(" + bagAmmo + ")";
-        loaded = true;
     }
 }

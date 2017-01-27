@@ -1540,7 +1540,7 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_IsEmpty: 0
   m_Events:
-  - time: 0.88
+  - time: 1
     functionName: Load
     data: 
     objectReferenceParameter: {fileID: 0}

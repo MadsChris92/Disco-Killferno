@@ -1916,11 +1916,6 @@ LineRenderer:
     alignment: 0
     textureMode: 0
   m_UseWorldSpace: 0
---- !u!82 &810953489 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82372331652808632, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-    type: 2}
-  m_PrefabInternal: {fileID: 920779961}
 --- !u!1 &842799879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,79 +2369,22 @@ Prefab:
       objectReference: {fileID: 301779173}
     - target: {fileID: 1421813767716516, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 121280, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: bagCap
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 82372331652808632, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 810953489}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: reloadSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 9a52c3406c16e904aa543332c8d93ff1, type: 3}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: loadSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: fireSound
-      value: 
-      objectReference: {fileID: 8300000, guid: cae2323ff7524f74da44a5a13ce66352, type: 3}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
-        type: 2}
-      propertyPath: emptySound
-      value: 
-      objectReference: {fileID: 8300000, guid: ec34be4efa7da8f4cb1fe0c476625db0, type: 3}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538517802329792, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114135589358987264, guid: 2bcf483d608c1fb4da333a2642ad82e0,
+    - target: {fileID: 114102525177654638, guid: 2bcf483d608c1fb4da333a2642ad82e0,
         type: 2}
       propertyPath: bulletSpeed
-      value: 10000
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102525177654638, guid: 2bcf483d608c1fb4da333a2642ad82e0,
+        type: 2}
+      propertyPath: magCap
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102525177654638, guid: 2bcf483d608c1fb4da333a2642ad82e0,
+        type: 2}
+      propertyPath: bagCap
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bcf483d608c1fb4da333a2642ad82e0, type: 2}
