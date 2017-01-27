@@ -92,6 +92,8 @@ public class Weapon : MonoBehaviour {
 		bulletClone.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * bulletSpeed);
 		Destroy(bulletClone, 5);
 
+        loaded = false;
+
 		recoilForce += recoil;
 		animator.SetTrigger("fire");
         audioSource.PlayOneShot(fireSound);
@@ -108,13 +110,14 @@ public class Weapon : MonoBehaviour {
         bagAmmo = Mathf.Max(bagAmmo-(magCap-magAmmo), 0);
         magAmmo = Mathf.Min(magCap, bagAmmo);
         text.text = magAmmo + "/" + magCap + "("+bagAmmo+")";
+        audioSource.PlayOneShot(loadSound);
     }
 
     protected void Load() {
         if (magAmmo > 0 && !loaded) {
             magAmmo--;
-            audioSource.PlayOneShot(loadSound);
         }
         text.text = magAmmo + "/" + magCap + "(" + bagAmmo + ")";
+        loaded = true;
     }
 }

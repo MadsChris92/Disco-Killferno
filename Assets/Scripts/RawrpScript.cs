@@ -17,6 +17,7 @@ public class RawrpScript : Weapon {
         }
         text.text = magAmmo + "/" + magCap + "(" + bagAmmo + ")";
         RoundsActive(magAmmo);
+        audioSource.PlayOneShot(loadSound);
     }
 
     new void Load() {
