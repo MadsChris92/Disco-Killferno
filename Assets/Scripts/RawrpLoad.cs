@@ -25,7 +25,6 @@ public class RawrpLoad : StateMachineBehaviour {
 
         if (stateInfo.IsName("Reload"))
             animator.SetBool("reloading", false);
-
     }
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here
